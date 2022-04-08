@@ -8,7 +8,7 @@ Canary Diamonds
 
 [R.I.P.](https://www.youtube.com/watch?v=GRoa6w-wnT4)  
 
-![Image](https://www.loc.gov/item/2010630432/a.png)
+![Image](https://tile.loc.gov/image-services/iiif/service:pnp:highsm:04400:04446/full/pct:25/0/default.jpg#h=1614&w=1199/a.png)
 
 > Hi 
 
