@@ -75,5 +75,5 @@ Essentially, this just copies over the edited file from the client, and simultan
   
 &nbsp;
 
-Well, that is all for now. Thank you for reading through this tutorial and until next time, take care.
+Well, that is all for now. Until next time, take care.
 
