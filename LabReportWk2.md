@@ -74,6 +74,7 @@ One way to optimize the process is to simply use previously entered commands. In
 Essentially, this just copies over the edited file from the client, and simultaneously compiles and runs the file on the server.
   
 &nbsp;
-
-Well, that is all for now. Until next time, take care.
+  
+Thank you for reading this tutorial.  
+Well, that is all for now. Uuntil next time, take care.
 
