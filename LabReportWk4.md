@@ -17,6 +17,10 @@ You will submit this to the Lab Report 2 - Week 4 assignment on Gradescope, whic
 *Code Change 1*
 
 &nbsp;
+
+<a href="https://ibb.co/XbrptRT"><img src="https://i.ibb.co/56gvLHV/Screen-Shot-2022-04-24-at-8-29-12-PM.png" alt="Screen-Shot-2022-04-24-at-8-29-12-PM" border="0"></a> 
+Code change: Additional condition added for while loop to execute 
+
 <a href="https://ibb.co/zZfRz8k"><img src="https://i.ibb.co/bXdBkHf/string-index-OOB-error-for-empty-test-file.png" alt="string-index-OOB-error-for-empty-test-file" border="0"></a> 
 
 Symptom: Running program throws StringIndexOutOfBoundsException  
