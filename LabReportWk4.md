@@ -14,11 +14,15 @@ Write 2-3 sentences describing the relationship between the bug, the symptom, an
 
 You will submit this to the Lab Report 2 - Week 4 assignment on Gradescope, which will have a similar process to the first lab report for grading.
 
-*Code Change 1 (To fix output for empty test file)*
+*Code Change 1 (Fixing output for empty test file)*
 
-<a href="https://ibb.co/XbrptRT"><img src="https://i.ibb.co/56gvLHV/Screen-Shot-2022-04-24-at-8-29-12-PM.png" alt="Screen-Shot-2022-04-24-at-8-29-12-PM" border="0"></a>
+<a href="https://ibb.co/Prx3qD2"><img src="https://i.ibb.co/dfB18mN/Screen-Shot-2022-04-24-at-8-40-07-PM.png" alt="Screen-Shot-2022-04-24-at-8-40-07-PM" border="0"></a>
   
-Code change: Additional condition added for while loop to execute 
+Additional condition added for the while loop to execute. 
+
+&nbsp;
+
+[Link to testing file for failure-inducing input](https://github.com/R3dbAbyVamp/markdown-parser/blob/main/testing3.md)
 
 &nbsp;
 
