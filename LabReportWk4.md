@@ -32,7 +32,12 @@ Explanation: The bug is that there is no code in the program to handle the case 
 
 &nbsp;
 
-*Code Change 2*
+*Code Change 2: Fixing output for parentheses inside parentheses*
 
+[Link to testing file for failure-inducing input](https://github.com/R3dbAbyVamp/markdown-parser/blob/main/testing2.md)
+
+<a href="https://ibb.co/GCqVDwt"><img src="https://i.ibb.co/r5VZhPc/Screen-Shot-2022-04-24-at-11-08-12-PM.png" alt="Screen-Shot-2022-04-24-at-11-08-12-PM" border="0"></a>
 
 *Code Change 3*
+
+[Link to testing file for failure-inducing input]()
