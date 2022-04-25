@@ -14,19 +14,21 @@ Write 2-3 sentences describing the relationship between the bug, the symptom, an
 
 You will submit this to the Lab Report 2 - Week 4 assignment on Gradescope, which will have a similar process to the first lab report for grading.
 
-*Code Change 1*
+*Code Change 1 (To fix output for empty test file)*
+
+<a href="https://ibb.co/XbrptRT"><img src="https://i.ibb.co/56gvLHV/Screen-Shot-2022-04-24-at-8-29-12-PM.png" alt="Screen-Shot-2022-04-24-at-8-29-12-PM" border="0"></a>
+  
+Code change: Additional condition added for while loop to execute 
 
 &nbsp;
-
-<a href="https://ibb.co/XbrptRT"><img src="https://i.ibb.co/56gvLHV/Screen-Shot-2022-04-24-at-8-29-12-PM.png" alt="Screen-Shot-2022-04-24-at-8-29-12-PM" border="0"></a> 
-Code change: Additional condition added for while loop to execute 
 
 <a href="https://ibb.co/zZfRz8k"><img src="https://i.ibb.co/bXdBkHf/string-index-OOB-error-for-empty-test-file.png" alt="string-index-OOB-error-for-empty-test-file" border="0"></a> 
 
 Symptom: Running program throws StringIndexOutOfBoundsException  
 
-The bug is that there is no code in the program to handle the case when the markdown file has no links at all (when the indices of the parentheses and brackets are all -1). So when the substring function is called, it tries to get a substring from 0 to -1 (the open parentheses index + 1 to the closing parentheses index). However, since all the indices must be at least 0 in java, -1 is considered out of bounds, resulting in the exception being thrown when calling MarkDownParse on the blank markdown test file.    
+Relation between bug, symptom, and failure-inducing input: The bug is that there is no code in the program to handle the case when the markdown file has no links at all (when the indices of the parentheses and brackets are all -1). So when the substring function is called, it tries to get a substring from 0 to -1 (the open parentheses index + 1 to the closing parentheses index). However, since all the indices must be at least 0 in java, -1 is considered out of bounds, resulting in the exception being thrown when calling MarkDownParse on the blank markdown test file.    
 
+&nbsp;
 
 *Code Change 2*
 
