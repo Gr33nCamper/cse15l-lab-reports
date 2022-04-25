@@ -40,7 +40,7 @@ Explanation: The bug is that there is no code in the program to handle the case 
 
 Symptom: Running program does not print out the first link fully
 
-Explanation: The bug is that the program mistakes the earliest closing parentheses (of the parentheses embedded in the main parentheses) as the actual closing parentheses. However, there are actually more characters following that closing parentheses, which are skipped over when the program looks for the opening bracket which follows the "decoy" closing parentheses. That is why calling MarkdownParse on the file with a link containing parentheses within parentheses results in an incomplete parse.  
+Explanation: The bug is that the program mistakes the earliest closing parentheses (of the parentheses embedded in the main parentheses) as the actual closing parentheses. However, there are actually more characters after that closing parentheses, which are skipped over when the program looks for the open bracket that follows the "decoy" closing parentheses. That is why calling MarkdownParse on the file with a link containing parentheses within parentheses results in an incomplete parse.  
 
 *Code Change 3*
 
