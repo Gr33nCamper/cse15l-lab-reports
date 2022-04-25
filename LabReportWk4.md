@@ -34,8 +34,21 @@ Explanation: The bug is that there is no code in the program to handle the case 
 
 Symptom: Running program does not print out the first link fully
 
-Explanation: The bug is that the program mistakes the earliest closing parentheses (of the parentheses embedded in the main parentheses) as the actual closing parentheses. However, there are actually more characters after that closing parentheses, which are skipped over when the program looks for the open bracket that follows the "decoy" closing parentheses. That is why calling MarkdownParse on the file with a link containing parentheses within parentheses results in an incomplete parse.  
+Explanation: The bug is that the program mistakes the earliest closing parentheses (of the parentheses embedded in the main parentheses) as the actual closing parentheses. However, there are actually more characters after that closing parentheses, which are skipped over when the program looks for the open bracket that follows the "decoy" closing parentheses. That is why calling MarkdownParse on the file with a link containing parentheses within parentheses results in an incomplete parse. 
 
-*Code Change 3*
+&nbsp;
 
-[Link to testing file for failure-inducing input]()
+*Code Change 3: Fixing infinite loop* 
+
+<a href="https://ibb.co/NS7r5X5"><img src="https://i.ibb.co/xH3YWyW/Screen-Shot-2022-04-24-at-11-57-45-PM.png" alt="Screen-Shot-2022-04-24-at-11-57-45-PM" border="0"></a>
+
+(Added while loop to skip blanks)
+
+<a href="https://ibb.co/dg6S5L6"><img src="https://i.ibb.co/6Bb2W1b/Screen-Shot-2022-04-24-at-11-44-46-PM.png" alt="Screen-Shot-2022-04-24-at-11-44-46-PM" border="0"></a> 
+
+
+Symptom: Running program results in infinite loop 
+
+[Link to testing file for failure-inducing input](https://github.com/R3dbAbyVamp/markdown-parser/blob/main/testingFive.md)
+
+Explanation: The bug is that the program cannot the first index of the open parentheses since there are many new lines separating the links. Since it cannot find the segment containing the link, it remains stuck at the same index, without appending to the return ArrayList. 
