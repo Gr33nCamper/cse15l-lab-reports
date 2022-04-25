@@ -13,3 +13,11 @@ Write 2-3 sentences describing the relationship between the bug, the symptom, an
 
 
 You will submit this to the Lab Report 2 - Week 4 assignment on Gradescope, which will have a similar process to the first lab report for grading.
+
+*Code Change 1* 
+
+
+*Code Change 2*
+
+
+*Code Change 3*
