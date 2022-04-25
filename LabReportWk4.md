@@ -18,19 +18,17 @@ You will submit this to the Lab Report 2 - Week 4 assignment on Gradescope, whic
 
 <a href="https://ibb.co/Prx3qD2"><img src="https://i.ibb.co/dfB18mN/Screen-Shot-2022-04-24-at-8-40-07-PM.png" alt="Screen-Shot-2022-04-24-at-8-40-07-PM" border="0"></a>
   
-Additional condition added for the while loop to execute. 
+(Added Condition: markdown file must contain open bracket for the while loop to execute) 
 
-&nbsp;
-
+  
 [Link to testing file for failure-inducing input](https://github.com/R3dbAbyVamp/markdown-parser/blob/main/testing3.md)
 
-&nbsp;
-
+  
 <a href="https://ibb.co/zZfRz8k"><img src="https://i.ibb.co/bXdBkHf/string-index-OOB-error-for-empty-test-file.png" alt="string-index-OOB-error-for-empty-test-file" border="0"></a> 
 
 Symptom: Running program throws StringIndexOutOfBoundsException  
 
-Relation between bug, symptom, and failure-inducing input: The bug is that there is no code in the program to handle the case when the markdown file has no links at all (when the indices of the parentheses and brackets are all -1). So when the substring function is called, it tries to get a substring from 0 to -1 (the open parentheses index + 1 to the closing parentheses index). However, since all the indices must be at least 0 in java, -1 is considered out of bounds, resulting in the exception being thrown when calling MarkDownParse on the blank markdown test file.    
+Explanation: The bug is that there is no code in the program to handle the case when the markdown file has no links at all (when the indices of the parentheses and brackets are all -1). So when the substring function is called, it tries to get a substring from 0 to -1 (the open parentheses index + 1 to the closing parentheses index). However, since all the indices must be at least 0 in java, -1 is considered out of bounds, resulting in the exception being thrown when calling MarkDownParse on the blank markdown test file.    
 
 &nbsp;
 
