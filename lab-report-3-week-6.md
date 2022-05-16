@@ -1,10 +1,10 @@
-In this lab report, you will implement all Group Choice Options (1-3) from Lab 5. 
-Complete them for yourself (if you haven’t already), and take the relevant screenshots listed below. 
-Create a post with a few sentences of description about all the options available. 
-Create it in a new file called lab-report-3-week-6 so that it gets a new page on your site, and add a link to the page to the index of your site. 
-You will submit it to Gradescope as usual as a few links.
+# Lab Report 3: More Remote Access (and Github)
 
-**1. Streamlining ssh Configuration**
+Implemented Group Choice Options (1-3) from Lab 5 are below. 
+
+&nbsp; 
+
+*1. Streamlining ssh Configuration*
 
 <a href="https://ibb.co/SVVksbn"><img src="https://i.ibb.co/1RRCv1q/Screen-Shot-2022-05-15-at-5-52-04-PM.png" alt="Screen-Shot-2022-05-15-at-5-52-04-PM" border="0"></a>
 
@@ -15,6 +15,8 @@ After changing directory to ~/.ssh on local computer, typed in `open config` Edi
 <a href="https://ibb.co/r7Fjhc5"><img src="https://i.ibb.co/M2ZvHGP/ssh-ieng6-command.png" alt="ssh-ieng6-command" border="0"></a> 
 
 The ssh command used to log in with alias. Alias used: ieng6. 
+
+As you can see, much simpler than typing out ssh cs15lsp2zadi@ieng6.ucsd.edu.
 
 &nbsp; 
 
