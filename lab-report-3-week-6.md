@@ -40,7 +40,7 @@ Public key on Github.
 
 <a href="https://ibb.co/h2f6sY1"><img src="https://i.ibb.co/6DBMYXJ/Screen-Shot-2022-05-16-at-12-01-57-AM.png" alt="Screen-Shot-2022-05-16-at-12-01-57-AM" border="0"></a>
 
-Public key on user account.
+Public key and private key location on user account is in .ssh directory.
 
 &nbsp;
 
