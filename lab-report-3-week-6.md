@@ -53,7 +53,7 @@ Value of public key.
 
 &nbsp; 
 
-<a href="https://ibb.co/GM930GJ"><img src="https://i.ibb.co/ykpBXKR/Screen-Shot-2022-05-16-at-2-07-51-AM.png" alt="Screen-Shot-2022-05-16-at-2-07-51-AM" border="0"></a>
+<a href="https://ibb.co/R9RtHqK"><img src="https://i.ibb.co/KXTByJg/Screen-Shot-2022-05-16-at-2-07-51-AM.png" alt="Screen-Shot-2022-05-16-at-2-07-51-AM" border="0"></a>
 
 Adding edited MarkdownParse.java file to staging area. 
 
@@ -105,6 +105,18 @@ Compiling and running tests for repository.
 
 &nbsp;
 
+<a href="https://ibb.co/Mk4sshv"><img src="https://i.ibb.co/8gp00BC/Screen-Shot-2022-05-16-at-3-10-42-AM.png" alt="Screen-Shot-2022-05-16-at-3-10-42-AM" border="0"></a>
+
+<a href="https://ibb.co/T8fXTYY"><img src="https://i.ibb.co/0M7NXmm/Screen-Shot-2022-05-16-at-3-11-08-AM.png" alt="Screen-Shot-2022-05-16-at-3-11-08-AM" border="0"></a>
+
+Combining `scp -r` and `ssh` to do a recursive copy and running the tests with just one line.
 
 
-Show (like in the last step of the first lab) combining scp, ;, and ssh to copy the whole directory and run the tests in one line.
+&nbsp;
+
+&nbsp;
+
+
+Thank you for your time reading this lab report. 
+
+That is all for now
