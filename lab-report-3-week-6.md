@@ -4,7 +4,7 @@ Implemented Group Choice Options (1-3) from Lab 5 are below.
 
 &nbsp; 
 
-*1. Streamlining ssh Configuration*
+**1. Streamlining ssh Configuration**
 
 <a href="https://ibb.co/SVVksbn"><img src="https://i.ibb.co/1RRCv1q/Screen-Shot-2022-05-15-at-5-52-04-PM.png" alt="Screen-Shot-2022-05-15-at-5-52-04-PM" border="0"></a>
 
@@ -27,6 +27,8 @@ An scp command copying staff.txt from local computer to remote account with only
 &nbsp;
 
 &nbsp; 
+
+&nbsp;
 
 
 **2. Setup Github Access from ieng6**
@@ -69,10 +71,40 @@ Committing changes to repository.
 
 Pushing changes to main branch. 
 
+&nbsp;
 
-&nbsp; 
+&nbsp;
+
+&nbsp;
 
 **3. Copy whole directories with scp -r**
 Show copying your whole markdown-parse directory to your ieng6 account.
-Show logging into your ieng6 account after doing this and compiling and running the tests for your repository.
+
+
+<a href="https://ibb.co/sWKtrfN"><img src="https://i.ibb.co/mN9S7j2/Screen-Shot-2022-05-16-at-2-27-59-AM.png" alt="Screen-Shot-2022-05-16-at-2-27-59-AM" border="0"></a>
+
+
+
+<a href="https://ibb.co/D9FZM2f"><img src="https://i.ibb.co/0CLx9by/Screen-Shot-2022-05-16-at-2-30-18-AM.png" alt="Screen-Shot-2022-05-16-at-2-30-18-AM" border="0"></a>
+
+Copying whole markdown-parse directory to ieng6 account.
+
+(Note: Only first and last sections of output shown after recursive copy, since the output is very long)
+
+&nbsp;
+
+<a href="https://ibb.co/9h3VJpV"><img src="https://i.ibb.co/DYg8N18/Screen-Shot-2022-05-16-at-2-37-02-AM.png" alt="Screen-Shot-2022-05-16-at-2-37-02-AM" border="0"></a>
+
+Logging into ieng6 account after recursively copying repository. 
+
+&nbsp; 
+
+<a href="https://ibb.co/ChTDV3n"><img src="https://i.ibb.co/BqSFT5g/Screen-Shot-2022-05-16-at-2-37-31-AM.png" alt="Screen-Shot-2022-05-16-at-2-37-31-AM" border="0"></a>
+
+Compiling and running tests for repository.
+
+&nbsp;
+
+
+
 Show (like in the last step of the first lab) combining scp, ;, and ssh to copy the whole directory and run the tests in one line.
