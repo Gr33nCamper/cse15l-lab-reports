@@ -40,7 +40,7 @@ Public ssh key on Github enables us to push to origin from remote computer.
 &nbsp; 
 
 
-<a href="https://ibb.co/thYqR2y"><img src="https://i.ibb.co/26cvJMX/Screen-Shot-2022-05-16-at-2-18-35-AM.png" alt="Screen-Shot-2022-05-16-at-2-18-35-AM" border="0"></a>
+<a href="https://ibb.co/rcbQHcL"><img src="https://i.ibb.co/D8G1Q86/Screen-Shot-2022-05-16-at-2-18-35-AM.png" alt="Screen-Shot-2022-05-16-at-2-18-35-AM" border="0"></a>
 
 Public key and private key location on user account is in .ssh directory.
 
