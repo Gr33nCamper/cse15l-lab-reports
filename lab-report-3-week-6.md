@@ -53,8 +53,28 @@ Value of public key.
 
 
 Show where the private key you made is stored on your user account (but not its contents) as a screenshot.
+
+
 Show running git commands to commit and push a change to Github while logged into your ieng6 account.
-Show a link for the resulting commit.
+
+<a href="https://ibb.co/GM930GJ"><img src="https://i.ibb.co/ykpBXKR/Screen-Shot-2022-05-16-at-2-07-51-AM.png" alt="Screen-Shot-2022-05-16-at-2-07-51-AM" border="0"></a>
+
+Adding edited MarkdownParse.java file to staging area. 
+
+&nbsp; 
+
+<a href="https://ibb.co/H7c9L2n"><img src="https://i.ibb.co/Y25V4Wp/Screen-Shot-2022-05-16-at-2-08-16-AM.png" alt="Screen-Shot-2022-05-16-at-2-08-16-AM" border="0"></a>
+
+Committing changes to repository. 
+
+[Link to resulting commit](https://github.com/R3dbAbyVamp/markdown-parser/commit/35a8c7f0f4769b69f8e0db806f0aeb304430cab0) 
+
+&nbsp; 
+
+<a href="https://ibb.co/PN4RRtN"><img src="https://i.ibb.co/TkRZZrk/Screen-Shot-2022-05-16-at-2-12-40-AM.png" alt="Screen-Shot-2022-05-16-at-2-12-40-AM" border="0"></a>
+
+Pushing changes to main branch. 
+
 
 &nbsp; 
 
