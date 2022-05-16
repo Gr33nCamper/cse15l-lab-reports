@@ -4,10 +4,18 @@ Create a post with a few sentences of description about all the options availabl
 Create it in a new file called lab-report-3-week-6 so that it gets a new page on your site, and add a link to the page to the index of your site. 
 You will submit it to Gradescope as usual as a few links.
 
-Streamlining ssh Configuration
-Show your .ssh/config file, and how you edited it (with VScode, another program, etc)
+**Streamlining ssh Configuration**
+
+After changing directory to ~/.ssh on local computer, typed in `open config` Edited file with TextEdit (file was initially blank).
+
+<a href="https://ibb.co/nCpmyhf"><img src="https://i.ibb.co/Ry8bKLP/Screen-Shot-2022-05-15-at-5-52-04-PM.png" alt="Screen-Shot-2022-05-15-at-5-52-04-PM" border="0"></a>
+
+
 Show the ssh command logging you into your account using just the alias you chose.
+
+
 Show an scp command copying a file to your account using just the alias you chose.
+
 
 Setup Github Access from ieng6
 Show where the public key you made is stored on Github and in your user account (screenshot).
