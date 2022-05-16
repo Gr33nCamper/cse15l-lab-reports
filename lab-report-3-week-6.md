@@ -16,7 +16,7 @@ After changing directory to ~/.ssh on local computer, typed in `open config` Edi
 
 The ssh command used to log in with alias. Alias used: ieng6. 
 
-As you can see, much simpler than typing out ssh cs15lsp2zadi@ieng6.ucsd.edu.
+As you can see, much simpler than typing out `ssh cs15lsp2zadi@ieng6.ucsd.edu`.
 
 &nbsp; 
 
