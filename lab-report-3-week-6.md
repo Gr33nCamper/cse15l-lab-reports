@@ -31,31 +31,25 @@ An scp command copying staff.txt from local computer to remote account with only
 
 **2. Setup Github Access from ieng6**
 
-<a href="https://ibb.co/MNx9jHx"><img src="https://i.ibb.co/dKw73vw/public-key-on-github.png" alt="public-key-on-github" border="0"></a>
+<a href="https://ibb.co/3WqT7Q0"><img src="https://i.ibb.co/tctH4Fb/Screen-Shot-2022-05-16-at-2-17-01-AM.png" alt="Screen-Shot-2022-05-16-at-2-17-01-AM" border="0"></a>
 
-Public key on Github.
+Public ssh key on Github enables us to push to origin from remote computer.
 
 &nbsp; 
 
 
-<a href="https://ibb.co/h2f6sY1"><img src="https://i.ibb.co/6DBMYXJ/Screen-Shot-2022-05-16-at-12-01-57-AM.png" alt="Screen-Shot-2022-05-16-at-12-01-57-AM" border="0"></a>
+<a href="https://ibb.co/thYqR2y"><img src="https://i.ibb.co/26cvJMX/Screen-Shot-2022-05-16-at-2-18-35-AM.png" alt="Screen-Shot-2022-05-16-at-2-18-35-AM" border="0"></a>
 
 Public key and private key location on user account is in .ssh directory.
 
 &nbsp;
 
 
-<a href="https://ibb.co/hRHKLN5"><img src="https://i.ibb.co/4ZMjKLy/Screen-Shot-2022-05-16-at-12-02-21-AM.png" alt="Screen-Shot-2022-05-16-at-12-02-21-AM" border="0"></a>
+<a href="https://ibb.co/3kMwGGL"><img src="https://i.ibb.co/0QFk88d/Screen-Shot-2022-05-16-at-2-22-00-AM.png" alt="Screen-Shot-2022-05-16-at-2-22-00-AM" border="0"></a>
 
 Value of public key.
 
 &nbsp; 
-
-
-Show where the private key you made is stored on your user account (but not its contents) as a screenshot.
-
-
-Show running git commands to commit and push a change to Github while logged into your ieng6 account.
 
 <a href="https://ibb.co/GM930GJ"><img src="https://i.ibb.co/ykpBXKR/Screen-Shot-2022-05-16-at-2-07-51-AM.png" alt="Screen-Shot-2022-05-16-at-2-07-51-AM" border="0"></a>
 
