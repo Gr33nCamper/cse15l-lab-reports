@@ -4,7 +4,7 @@ Create a post with a few sentences of description about all the options availabl
 Create it in a new file called lab-report-3-week-6 so that it gets a new page on your site, and add a link to the page to the index of your site. 
 You will submit it to Gradescope as usual as a few links.
 
-**Streamlining ssh Configuration**
+**1. Streamlining ssh Configuration**
 
 <a href="https://ibb.co/SVVksbn"><img src="https://i.ibb.co/1RRCv1q/Screen-Shot-2022-05-15-at-5-52-04-PM.png" alt="Screen-Shot-2022-05-15-at-5-52-04-PM" border="0"></a>
 
@@ -18,22 +18,45 @@ The ssh command used to log in with alias. Alias used: ieng6.
 
 &nbsp; 
 
+<a href="https://ibb.co/PgzmLX2"><img src="https://i.ibb.co/5LxM0pQ/Screen-Shot-2022-05-15-at-10-48-03-PM.png" alt="Screen-Shot-2022-05-15-at-10-48-03-PM" border="0"></a> 
 
-Show an scp command copying a file to your account using just the alias you chose.
+An scp command copying staff.txt from local computer to remote account with only alias.
 
 &nbsp;
+
 &nbsp; 
 
 
-**Setup Github Access from ieng6**
-Show where the public key you made is stored on Github and in your user account (screenshot).
+**2. Setup Github Access from ieng6**
+
+<a href="https://ibb.co/MNx9jHx"><img src="https://i.ibb.co/dKw73vw/public-key-on-github.png" alt="public-key-on-github" border="0"></a>
+
+Public key on Github.
+
+&nbsp; 
+
+
+<a href="https://ibb.co/h2f6sY1"><img src="https://i.ibb.co/6DBMYXJ/Screen-Shot-2022-05-16-at-12-01-57-AM.png" alt="Screen-Shot-2022-05-16-at-12-01-57-AM" border="0"></a>
+
+Public key on user account.
+
+&nbsp;
+
+
+<a href="https://ibb.co/hRHKLN5"><img src="https://i.ibb.co/4ZMjKLy/Screen-Shot-2022-05-16-at-12-02-21-AM.png" alt="Screen-Shot-2022-05-16-at-12-02-21-AM" border="0"></a>
+
+Value of public key.
+
+&nbsp; 
+
+
 Show where the private key you made is stored on your user account (but not its contents) as a screenshot.
 Show running git commands to commit and push a change to Github while logged into your ieng6 account.
 Show a link for the resulting commit.
 
 &nbsp; 
 
-**Copy whole directories with scp -r**
+**3. Copy whole directories with scp -r**
 Show copying your whole markdown-parse directory to your ieng6 account.
 Show logging into your ieng6 account after doing this and compiling and running the tests for your repository.
 Show (like in the last step of the first lab) combining scp, ;, and ssh to copy the whole directory and run the tests in one line.
