@@ -6,7 +6,7 @@ You will submit it to Gradescope as usual as a few links.
 
 **Streamlining ssh Configuration**
 
-<a href="https://ibb.co/nCpmyhf"><img src="https://i.ibb.co/Ry8bKLP/Screen-Shot-2022-05-15-at-5-52-04-PM.png" alt="Screen-Shot-2022-05-15-at-5-52-04-PM" border="0"></a>
+<a href="https://ibb.co/SVVksbn"><img src="https://i.ibb.co/1RRCv1q/Screen-Shot-2022-05-15-at-5-52-04-PM.png" alt="Screen-Shot-2022-05-15-at-5-52-04-PM" border="0"></a>
 
 After changing directory to ~/.ssh on local computer, typed in `open config` Edited file with TextEdit (file was initially blank).
 
