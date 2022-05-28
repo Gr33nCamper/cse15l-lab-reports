@@ -6,7 +6,15 @@ Comment if short code change could be made to fix problem
 &nbsp;
 
 Your report should include:
-A link to your markdown-parse repository and a link to the one you reviewed in week 7
+A link to your markdown-parse repository
+[my markdown-parse repository](https://github.com/R3dbAbyVamp/markdown-parser)
+
+&nbsp;
+
+and a link to the one you reviewed in week 7
+[reviewed markdown-parse repository](https://github.com/lithicarus/markdown-parser) 
+&nbsp;
+
 For each test above:
 Decide on what it should produce (i.e., expected output) by using either VScode preview or the CommonMark demo site
 Showing the code in MarkdownParseTest.java for how you turned it into a test
