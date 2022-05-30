@@ -27,7 +27,29 @@ For each test above:
 
 **2. MarkdownParseTest.java Test for Parsing Second Snippet**
 
+Test for my implementation:
+
+<a href="https://ibb.co/FxkLQDZ"><img src="https://i.ibb.co/bWjM4Kw/Screen-Shot-2022-05-30-at-2-02-40-AM.png" alt="Screen-Shot-2022-05-30-at-2-02-40-AM" border="0"></a>
+
+
+-------Results-------
+
+<a href="https://ibb.co/3S6gkL7"><img src="https://i.ibb.co/9yKQGCN/Screen-Shot-2022-05-30-at-1-58-14-AM.png" alt="Screen-Shot-2022-05-30-at-1-58-14-AM" border="0"></a>
+
+My code failed.
+(Talk about what you could fix)
+
 &nbsp;
+
+Test for reviewed implementation: 
+
+<a href="https://ibb.co/g6sV9Mj"><img src="https://i.ibb.co/XVm8LZ2/Screen-Shot-2022-05-30-at-2-02-51-AM.png" alt="Screen-Shot-2022-05-30-at-2-02-51-AM" border="0"></a>
+
+&nbsp;
+
+<a href="https://ibb.co/BwhqJX6"><img src="https://i.ibb.co/t308672/Screen-Shot-2022-05-30-at-2-00-40-AM.png" alt="Screen-Shot-2022-05-30-at-2-00-40-AM" border="0"></a>
+
+This code failed also.
 
 
 
