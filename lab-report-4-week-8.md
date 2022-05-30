@@ -22,7 +22,39 @@ For each test above:
 
 **1. MarkdownParseTest.java Test for Parsing First Snippet**
 
+Test for my implementation:
+
+<a href="https://ibb.co/kqd6w11"><img src="https://i.ibb.co/ssBJNHH/Screen-Shot-2022-05-27-at-5-50-46-PM.png" alt="Screen-Shot-2022-05-27-at-5-50-46-PM" border="0"></a>
+
 &nbsp;
+
+-------Results-------
+
+<a href="https://ibb.co/F8bY9W5"><img src="https://i.ibb.co/wpNQTLS/Screen-Shot-2022-05-30-at-2-10-18-AM.png" alt="Screen-Shot-2022-05-30-at-2-10-18-AM" border="0"></a>
+
+My code failed.
+(Talk about if small code change could fix this)
+
+&nbsp;
+
+
+
+Test for reviewed implementation:
+
+<a href="https://ibb.co/4fKrkqH"><img src="https://i.ibb.co/JdmJZ19/Screen-Shot-2022-05-30-at-2-06-38-AM.png" alt="Screen-Shot-2022-05-30-at-2-06-38-AM" border="0"></a>
+
+This code failed also. 
+
+&nbsp;
+
+-------Results-------
+
+<a href="https://ibb.co/bWn9Kgh"><img src="https://i.ibb.co/xCQT7Sv/Screen-Shot-2022-05-30-at-2-10-39-AM.png" alt="Screen-Shot-2022-05-30-at-2-10-39-AM" border="0"></a>
+
+&nbsp;
+
+&nbsp;
+
 
 
 **2. MarkdownParseTest.java Test for Parsing Second Snippet**
@@ -47,10 +79,16 @@ Test for reviewed implementation:
 
 &nbsp;
 
+-------Results-------
+
 <a href="https://ibb.co/BwhqJX6"><img src="https://i.ibb.co/t308672/Screen-Shot-2022-05-30-at-2-00-40-AM.png" alt="Screen-Shot-2022-05-30-at-2-00-40-AM" border="0"></a>
 
 This code failed also.
 
+
+&nbsp;
+
+&nbsp;
 
 
 **3. MarkdownParseTest.java Test for Parsing Third Snippet**
@@ -66,8 +104,6 @@ Test for reviewed implementation
 <a href="https://ibb.co/qdnXKHM"><img src="https://i.ibb.co/PNY3K2Z/Screen-Shot-2022-05-27-at-5-50-32-PM.png" alt="Screen-Shot-2022-05-27-at-5-50-32-PM" border="0"></a>
 
 &nbsp;
-
-<a href="https://ibb.co/kqd6w11"><img src="https://i.ibb.co/ssBJNHH/Screen-Shot-2022-05-27-at-5-50-46-PM.png" alt="Screen-Shot-2022-05-27-at-5-50-46-PM" border="0"></a>
 
 
 Decide on what it should produce (i.e., expected output) by using either VScode preview or the CommonMark demo site
