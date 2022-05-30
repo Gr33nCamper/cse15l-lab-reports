@@ -7,33 +7,34 @@ Comment if short code change could be made to fix problem
 
 &nbsp;
 
-Your report should include:
-A link to your markdown-parse repository
+Links: 
+
 [my markdown-parse repository](https://github.com/R3dbAbyVamp/markdown-parser)
 
-&nbsp;
-
-and a link to the one you reviewed in week 7
 [reviewed markdown-parse repository](https://github.com/lithicarus/markdown-parser) 
 
 &nbsp;
 
-For each test above:
+
 
 **1. MarkdownParseTest.java Test for Parsing First Snippet**
 
 Test for my implementation:
 
-<a href="https://ibb.co/kqd6w11"><img src="https://i.ibb.co/ssBJNHH/Screen-Shot-2022-05-27-at-5-50-46-PM.png" alt="Screen-Shot-2022-05-27-at-5-50-46-PM" border="0"></a>
+<a href="https://ibb.co/dcfxMNK"><img src="https://i.ibb.co/fSXLF30/Screen-Shot-2022-05-30-at-4-24-15-PM.png" alt="Screen-Shot-2022-05-30-at-4-24-15-PM" border="0"></a>
 
 &nbsp;
 
 -------Results-------
 
-<a href="https://ibb.co/F8bY9W5"><img src="https://i.ibb.co/wpNQTLS/Screen-Shot-2022-05-30-at-2-10-18-AM.png" alt="Screen-Shot-2022-05-30-at-2-10-18-AM" border="0"></a>
+<a href="https://ibb.co/1Z1xMKH"><img src="https://i.ibb.co/312HvWt/Screen-Shot-2022-05-30-at-4-12-03-PM.png" alt="Screen-Shot-2022-05-30-at-4-12-03-PM" border="0"></a>
+
+
 
 My code failed.
-(Talk about if small code change could fix this)
+&nbsp; 
+
+I do not believe there could be a small code change that would make the program work for snippet 1 and all related cases. While there is the most obvious case where everything is enclosed with backticks, and thus there cannot be a link, there are numerous additional edge cases (e.g. case where only the closing bracket is enclosed with backticks, which is enough to invalidate the link, and two backticks are in between the brackets and parentheses, which also invalidates the link). 
 
 &nbsp;
 
@@ -41,15 +42,15 @@ My code failed.
 
 Test for reviewed implementation:
 
-<a href="https://ibb.co/4fKrkqH"><img src="https://i.ibb.co/JdmJZ19/Screen-Shot-2022-05-30-at-2-06-38-AM.png" alt="Screen-Shot-2022-05-30-at-2-06-38-AM" border="0"></a>
-
-This code did not pass the test 
+<a href="https://ibb.co/thW2hjy"><img src="https://i.ibb.co/qnPgnqb/Screen-Shot-2022-05-30-at-4-24-06-PM.png" alt="Screen-Shot-2022-05-30-at-4-24-06-PM" border="0"></a>
 
 &nbsp;
 
 -------Results-------
 
-<a href="https://ibb.co/bWn9Kgh"><img src="https://i.ibb.co/xCQT7Sv/Screen-Shot-2022-05-30-at-2-10-39-AM.png" alt="Screen-Shot-2022-05-30-at-2-10-39-AM" border="0"></a>
+<a href="https://ibb.co/TwcbmtQ"><img src="https://i.ibb.co/ZfdYWxQ/Screen-Shot-2022-05-30-at-4-12-15-PM.png" alt="Screen-Shot-2022-05-30-at-4-12-15-PM" border="0"></a>
+
+This code did not pass the test 
 
 &nbsp;
 
@@ -69,7 +70,9 @@ Test for my implementation:
 <a href="https://ibb.co/3S6gkL7"><img src="https://i.ibb.co/9yKQGCN/Screen-Shot-2022-05-30-at-1-58-14-AM.png" alt="Screen-Shot-2022-05-30-at-1-58-14-AM" border="0"></a>
 
 My code failed.
-(Talk about what you could fix)
+&nbsp; 
+
+I do not believe there could be a small code change that would make the program work for snippet 2 and all related cases. While my code accounts for nesting brackets within brackets or parentheses within parentheses, it does not account for nesting a link inside another link. This would require checking if there is a character (e.g. close bracket) after the closing parentheses which pairs with an earlier character (e.g. open bracket). While this could perhaps be done with a stack ADT, it is going to take more than 10 lines when you consider storing the indexes of paired parentheses and brackets for tracking and recognizing special combinations where the link will be valid still.         
 
 &nbsp;
 
