@@ -107,6 +107,8 @@ Test for my implementation
 <a href="https://ibb.co/dDJ1c9R"><img src="https://i.ibb.co/6FJVZhk/Screen-Shot-2022-05-30-at-5-10-25-PM.png" alt="Screen-Shot-2022-05-30-at-5-10-25-PM" border="0"></a>
 
 My code failed. 
+&nbsp;
+
 It looks like there could be a small code fix. All you would need to do is add a check for if the index immediately after a newline character is followed by one more newline character, since two or more consecutive newlines automatically invalidates the link.
 
 
