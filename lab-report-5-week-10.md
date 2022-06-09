@@ -17,9 +17,16 @@ For each test:
 Describe which implementation is correct, or neither if both give the wrong output
 Indicate both actual outputs (provide screenshots) and also what the expected output is (list the links that are expected in the output).
 
+For the implementation that’s not correct (or choose one if both are incorrect), describe the bug (the problem in the code) in about 2-3 sentences. You don’t have to provide a fix, but you should be specific about what is wrong with the program, and show the code that should be fixed (Provide a screenshot of code and highlight where the change needs to be made).
+
 
 **Test 1**
+Used vimdiff on the results of running a bash for loop. (Note: the bash script for my implementation led to an infinite loop for more than one of the tests, so the results.txt file did not include the results for all the test files).   
 
+[Test-file 12 link](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/12.md) 
+
+The implementation provided for lab 9 is correct, since there are no links in the test file.
+My implementation leads to this bug: (prints, but does not terminate loop?)
 
 &nbsp; 
 
