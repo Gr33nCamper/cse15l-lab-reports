@@ -23,10 +23,14 @@ For the implementation that’s not correct (or choose one if both are incorrect
 **Test 1**
 Used vimdiff on the results of running a bash for loop. (Note: the bash script for my implementation led to an infinite loop for more than one of the tests, so the results.txt file did not include the results for all the test files).   
 
-[Test-file 12 link](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/12.md) 
+[Test-file 12 link](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/12.md)
+
+Output from my implementation: 
+Output from provided implementation: 
 
 The implementation provided for lab 9 is correct, since there are no links in the test file.
-My implementation leads to this bug: (prints, but does not terminate loop?)
+My implementation leads to this bug:
+Does not take into account case where a closing parentheses after a "decoy" set of closing parentheses does not exist. We define decoy closing parentheses as closing parentheses which are not at the end of the markdown file or which are not followed by a newline character. 
 
 &nbsp; 
 
