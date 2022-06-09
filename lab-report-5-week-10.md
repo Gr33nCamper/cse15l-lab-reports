@@ -1,4 +1,4 @@
-#Lab Report 5: Comparing MarkdownParse Implementations 
+# Lab Report 5: Comparing MarkdownParse Implementations 
 
 In lab 9, you experimented with the many tests provided under the test-files/ folder. For this lab report, choose any two tests from the 652 tests where your implementation (or a representative implementation from your group) had different answers than the implementation we provided for lab 9. The tests with different answers should correspond to different bugs – that is, you couldn’t easily fix both with one code change.
 
@@ -16,4 +16,12 @@ Provide a link to the test-file with different-results (in the provided reposito
 For each test:
 Describe which implementation is correct, or neither if both give the wrong output
 Indicate both actual outputs (provide screenshots) and also what the expected output is (list the links that are expected in the output).
+
+
+**Test 1**
+
+
+&nbsp; 
+
+**Test 2** 
 
