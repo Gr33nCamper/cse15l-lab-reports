@@ -64,7 +64,8 @@ Output from provided implementation:
 
 Neither implementation is correct. 
 
-My implementation leads to an infinite loop. The provided implementation detects one link, when in fact no links exist.
+My implementation leads to an infinite loop. 
+The provided implementation detects one link, when in fact no links exist.
 
 The problem with my implementation: The program never reaches the end of the markdown file.   
 
