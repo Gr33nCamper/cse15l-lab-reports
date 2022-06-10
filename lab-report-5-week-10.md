@@ -1,6 +1,7 @@
 # Lab Report 5: Comparing MarkdownParse Implementations 
 
-**Test 1**
+**Test 1 (Markdown file with a long chain of various symbols)**
+
 Used vimdiff on the results of running a bash for loop to find tests with different results. (Note: the bash script for my implementation led to an infinite loop for more than one of the tests, so the results.txt file did not include the results for all the test files).   
 
 [Test-file 12 link](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/12.md)
@@ -26,7 +27,8 @@ Output from provided implementation:
 
 The implementation provided for lab 9 is correct, since there are no links in the test file.
 
-My implementation leads to an index out of bounds exception, so no links are generated and only one print statement shows. The reason for this is the program does not take into account the case where a closing parentheses after a "decoy" set of closing parentheses does not exist (We define decoy closing parentheses as closing parentheses which are not at the end of the markdown file or which are not followed by a newline character). So when it tries to add a substring from the previous open parentheses to the closing parentheses, which doesn't exist, it ends up calling the substring function from a valid index to -1, an invalid index.
+The problem: index out of bounds exception.
+My implementation did not take into account the case where a closing parentheses after a "decoy" set of closing parentheses does not exist (We define decoy closing parentheses as closing parentheses which are not at the end of the markdown file or which are not followed by a newline character). So when it tries to add a substring from the previous open parentheses to the closing parentheses, which doesn't exist, it ends up calling the substring function from a valid index to -1, an invalid index. Accordingly, no links are generated, only a print statement is shown as output.
 
 What I should have done was check if the closeParen index was >= 0 before adding the substring containing that index to the return string. If not, then break out of the while loop, since no link can exist, unless there were brackets preceding it and which enclosed characters.
 In fact, a better way would be to check for the existence of brackets before checking for the existence of parentheses. If no brackets exist, then we can skip forward, since no link can exist without brackets preceding parentheses. 
@@ -46,7 +48,7 @@ The larger change would have to be made after finding the bracket indices, but b
 
 
 
-**Test 2**
+**Test 2 (Markdown file with escape characters, but this time specifically to make other markdown modifiers invalid)**
 
 Used vimdiff on the results of running a bash for loop to find tests with different results. 
 
@@ -80,9 +82,13 @@ Since the progeram does not find an initial opening parentheses, it keeps passin
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/CsrM3hL/Screen-Shot-2022-06-09-at-6-26-36-PM.png" alt="Screen-Shot-2022-06-09-at-6-26-36-PM" border="0"></a>
 
+&nbsp;
+
 So when the substring function (see screenshot below) is later called from the index of the non-existent open parentheses plus one (equivalently, 0), and ending at the closing parentheses, it keeps returning the same string again and again without advancing forward. The value of the current index remains less than the markdown file length, so the while loop condition continues to be true. 
 
 <a href="https://ibb.co/3v70LcC"><img src="https://i.ibb.co/cw1N7Qr/Screen-Shot-2022-06-09-at-6-29-57-PM.png" alt="Screen-Shot-2022-06-09-at-6-29-57-PM" border="0"></a>
+
+&nbsp;
 
 What I should have done was check if an initial open parentheses exists before checking for a closing parentheses, since a half pair of parentheses cannot enclose anything. And if it doesn't exist, this means either it doesn't exist, or the program did not recognize another existing open parentheses as a valid one. If it doesn't exist, the program should break out of the while loop. The additional if-statement should be added before the highlighted line looking for the closing parentheses index.
 
