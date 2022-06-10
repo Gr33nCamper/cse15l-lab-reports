@@ -21,7 +21,7 @@ For the implementation that’s not correct (or choose one if both are incorrect
 
 
 **Test 1**
-Used vimdiff on the results of running a bash for loop. (Note: the bash script for my implementation led to an infinite loop for more than one of the tests, so the results.txt file did not include the results for all the test files).   
+Used vimdiff on the results of running a bash for loop to find tests with different results. (Note: the bash script for my implementation led to an infinite loop for more than one of the tests, so the results.txt file did not include the results for all the test files).   
 
 [Test-file 12 link](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/12.md)
 
@@ -68,7 +68,7 @@ The larger change would have to be made after finding the bracket indices, but b
 
 **Test 2**
 
-Used vimdiff on the results of running a bash for loop.
+Used vimdiff on the results of running a bash for loop to find tests with different results. 
 
 [Test-file 14 link](https://github.com/nidhidhamnani/markdown-parser/blob/main/test-files/14.md)
 
@@ -89,5 +89,17 @@ Output from provided implementation:
 <a href="https://ibb.co/HYK2gZ6"><img src="https://i.ibb.co/QnJcm0L/Screen-Shot-2022-06-09-at-6-00-03-PM.png" alt="Screen-Shot-2022-06-09-at-6-00-03-PM" border="0"></a>
 
 &nbsp; 
+
+Neither implementation is correct. 
+
+My implementation leads to an infinite loop. The provided implementation detects one link, when in fact no links exist.
+
+The problem: The program never reaches the end of the markdown file. What I should have done was check if an initial open parentheses exists before checking for a closing parentheses, since a half pair of parentheses cannot enclose anything. And if it doesn't exist, this means either it doesn't exist, or the program did not recognize another existing open parentheses as a valid one. It keeps passing the index of the first open parentheses as -1.  
+
+<a href="https://ibb.co/8YczhN2"><img src="https://i.ibb.co/fDv8cqt/Screen-Shot-2022-06-09-at-6-29-14-PM.png" alt="Screen-Shot-2022-06-09-at-6-29-14-PM" border="0"></a>
+
+Since the progeram does not find an initial opening parentheses, it keeps passing the index as -1. However, it still searches for a set of closing parentheses. The thing is, when you call the `indexOf(char, startIndex)` function and start searching from an invalid index, it will just look for the character starting from the beginning. And it does in fact find the closing parentheses index.  
+
+So when the substring function is later called from the index of the open parentheses plus one, or 0, and ending at the closing parentheses, it keeps returning the same string again and again without advancing forward. The value of the open parentheses index remains -1, meaning the while loop condition continues to be true.     
 
 
