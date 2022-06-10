@@ -1,25 +1,5 @@
 # Lab Report 5: Comparing MarkdownParse Implementations 
 
-In lab 9, you experimented with the many tests provided under the test-files/ folder. For this lab report, choose any two tests from the 652 tests where your implementation (or a representative implementation from your group) had different answers than the implementation we provided for lab 9. The tests with different answers should correspond to different bugs – that is, you couldn’t easily fix both with one code change.
-
-Note : 
-Please use the command line to run MarkdownParse/tests instead of  the VSCode play button 
-MarkdownParse.java in the code provided for lab 9 is not 100% correct and may have tests where expected output is different from actual output
-
-&nbsp;
-
-Explain:
-How you found the tests with different results (Did you use vimdiff on the results of running a bash for loop? Did you search through manually? Did you use some other programmatic idea?)
-
-Provide a link to the test-file with different-results (in the provided repository or your repository , either is fine)
-
-For each test:
-Describe which implementation is correct, or neither if both give the wrong output
-Indicate both actual outputs (provide screenshots) and also what the expected output is (list the links that are expected in the output).
-
-For the implementation that’s not correct (or choose one if both are incorrect), describe the bug (the problem in the code) in about 2-3 sentences. You don’t have to provide a fix, but you should be specific about what is wrong with the program, and show the code that should be fixed (Provide a screenshot of code and highlight where the change needs to be made).
-
-
 **Test 1**
 Used vimdiff on the results of running a bash for loop to find tests with different results. (Note: the bash script for my implementation led to an infinite loop for more than one of the tests, so the results.txt file did not include the results for all the test files).   
 
@@ -94,12 +74,18 @@ Neither implementation is correct.
 
 My implementation leads to an infinite loop. The provided implementation detects one link, when in fact no links exist.
 
-The problem: The program never reaches the end of the markdown file. What I should have done was check if an initial open parentheses exists before checking for a closing parentheses, since a half pair of parentheses cannot enclose anything. And if it doesn't exist, this means either it doesn't exist, or the program did not recognize another existing open parentheses as a valid one. It keeps passing the index of the first open parentheses as -1.  
+The problem: The program never reaches the end of the markdown file.   
+
+Since the progeram does not find an initial opening parentheses, it keeps passing the index as -1. However, it still searches for a set of closing parentheses. The thing is, when you call the `indexOf(char, startIndex)` function and start searching from an invalid index, it will just look for the character starting from the beginning. And the program does in fact find the closing parentheses index as 53. This is shown in the debugging print statements below. 
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/CsrM3hL/Screen-Shot-2022-06-09-at-6-26-36-PM.png" alt="Screen-Shot-2022-06-09-at-6-26-36-PM" border="0"></a>
+
+So when the substring function (see screenshot below) is later called from the index of the non-existent open parentheses plus one (equivalently, 0), and ending at the closing parentheses, it keeps returning the same string again and again without advancing forward. The value of the current index remains less than the markdown file length, so the while loop condition continues to be true. 
+
+<a href="https://ibb.co/3v70LcC"><img src="https://i.ibb.co/cw1N7Qr/Screen-Shot-2022-06-09-at-6-29-57-PM.png" alt="Screen-Shot-2022-06-09-at-6-29-57-PM" border="0"></a>
+
+What I should have done was check if an initial open parentheses exists before checking for a closing parentheses, since a half pair of parentheses cannot enclose anything. And if it doesn't exist, this means either it doesn't exist, or the program did not recognize another existing open parentheses as a valid one. If it doesn't exist, the program should break out of the while loop. The additional if-statement should be added before the highlighted line looking for the closing parentheses index.
 
 <a href="https://ibb.co/8YczhN2"><img src="https://i.ibb.co/fDv8cqt/Screen-Shot-2022-06-09-at-6-29-14-PM.png" alt="Screen-Shot-2022-06-09-at-6-29-14-PM" border="0"></a>
-
-Since the progeram does not find an initial opening parentheses, it keeps passing the index as -1. However, it still searches for a set of closing parentheses. The thing is, when you call the `indexOf(char, startIndex)` function and start searching from an invalid index, it will just look for the character starting from the beginning. And it does in fact find the closing parentheses index.  
-
-So when the substring function is later called from the index of the open parentheses plus one, or 0, and ending at the closing parentheses, it keeps returning the same string again and again without advancing forward. The value of the open parentheses index remains -1, meaning the while loop condition continues to be true.     
 
 
