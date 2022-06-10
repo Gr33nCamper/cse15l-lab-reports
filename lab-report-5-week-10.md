@@ -27,8 +27,11 @@ Output from provided implementation:
 
 The implementation provided for lab 9 is correct, since there are no links in the test file.
 
-The problem: index out of bounds exception.
-My implementation did not take into account the case where a closing parentheses after a "decoy" set of closing parentheses does not exist (We define decoy closing parentheses as closing parentheses which are not at the end of the markdown file or which are not followed by a newline character). So when it tries to add a substring from the previous open parentheses to the closing parentheses, which doesn't exist, it ends up calling the substring function from a valid index to -1, an invalid index. Accordingly, no links are generated, only a print statement is shown as output.
+&nbsp;
+
+The problem with my implementation: index out of bounds exception.
+
+My program did not take into account the case where a closing parentheses after a "decoy" set of closing parentheses does not exist (We define decoy closing parentheses as closing parentheses which are not at the end of the markdown file or which are not followed by a newline character). So when it tries to add a substring from the previous open parentheses to the closing parentheses, which doesn't exist, it ends up calling the substring function from a valid index to -1, an invalid index. Accordingly, no links are generated, only a print statement is shown as output.
 
 What I should have done was check if the closeParen index was >= 0 before adding the substring containing that index to the return string. If not, then break out of the while loop, since no link can exist, unless there were brackets preceding it and which enclosed characters.
 In fact, a better way would be to check for the existence of brackets before checking for the existence of parentheses. If no brackets exist, then we can skip forward, since no link can exist without brackets preceding parentheses. 
@@ -76,7 +79,9 @@ Neither implementation is correct.
 
 My implementation leads to an infinite loop. The provided implementation detects one link, when in fact no links exist.
 
-The problem: The program never reaches the end of the markdown file.   
+&nbsp;
+
+The problem with my implementation: The program never reaches the end of the markdown file.   
 
 Since the progeram does not find an initial opening parentheses, it keeps passing the index as -1. However, it still searches for a set of closing parentheses. The thing is, when you call the `indexOf(char, startIndex)` function and start searching from an invalid index, it will just look for the character starting from the beginning. And the program does in fact find the closing parentheses index as 53. This is shown in the debugging print statements below. 
 
