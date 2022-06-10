@@ -18,9 +18,6 @@ Output from provided implementation:
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/Wky9BKm/Screen-Shot-2022-06-09-at-5-32-24-PM.png" alt="Screen-Shot-2022-06-09-at-5-32-24-PM" border="0"></a>
 
-&nbsp;
-
-
 The implementation provided for lab 9 is correct, since there are no links in the test file.
 
 The problem with my implementation: index out of bounds exception.
@@ -38,6 +35,8 @@ The larger change would have to be made after finding the bracket indices, but b
 
 <a href="https://ibb.co/PrQjxtL"><img src="https://i.ibb.co/dfgMB7T/Screen-Shot-2022-06-09-at-5-51-11-PM.png" alt="Screen-Shot-2022-06-09-at-5-51-11-PM" border="0"></a>
 
+
+&nbsp; 
 
 &nbsp; 
 
@@ -62,9 +61,6 @@ Output from my implementation:
 Output from provided implementation: 
 
 <a href="https://ibb.co/HYK2gZ6"><img src="https://i.ibb.co/QnJcm0L/Screen-Shot-2022-06-09-at-6-00-03-PM.png" alt="Screen-Shot-2022-06-09-at-6-00-03-PM" border="0"></a>
-
-&nbsp; 
-
 
 Neither implementation is correct. 
 
